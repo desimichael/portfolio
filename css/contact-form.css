@@ -3,14 +3,14 @@
 	border: 2px solid var(--grey-bg);
 	padding: 5px;
 	display: flex;
-	width: 70%;
+	width: 100%;
 }
 .contact .contactBox .contactInfo {
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 	background: linear-gradient(135deg, #393e40 0%, #7c7a7a 70%, #393e40 100%);
 	border-top-right-radius: 3px;
 	border-bottom-right-radius: 3px;
-	width: 100%;
+	width: 50%;
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
@@ -56,7 +56,6 @@
 	position: relative;
 	width: 100%;
 	display: flex;
-	flex-wrap: wrap;
 	gap: 10px;
 }
 .contact .contactForm .row100 .col {
@@ -165,9 +164,13 @@ input[type="submit"]:hover {
 	.contact .title {
 		font-size: 4rem;
 	}
+
 	.contact .contactBox {
 		display: flex;
 		flex-direction: column;
+		width: 100%;
+	}
+	.contact .contactBox .contactInfo {
 		width: 100%;
 	}
 	.contact .contactBox .contactInfo .box .contactIcon {
@@ -186,6 +189,13 @@ input[type="submit"]:hover {
 		padding: 25px;
 		margin-bottom: 25px;
 	}
+	.contact .contactForm .row100 {
+		position: relative;
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+	}
 	.contact .contactForm .row100 .inputBox .line {
 		width: 100%;
 	}
@@ -195,6 +205,16 @@ input[type="submit"]:hover {
 @media (min-width: 768px) and (max-width: 992px) {
 	.contact .contactBox {
 		width: 100%;
+	}
+	.contact .contactBox .contactInfo .box {
+		padding: 10px;
+	}
+	.contact .contactBox .contactInfo .box .contactIcon {
+		font-size: 5rem;
+	}
+	.contact .contactBox .contactInfo .box .icon i {
+		width: 30px;
+		height: 30px;
 	}
 }
 
