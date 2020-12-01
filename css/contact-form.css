@@ -1,69 +1,79 @@
 .contact .contactBox {
 	margin-top: 50px;
-	display: flex;
-	width: 90%;
 	border: 2px solid var(--grey-bg);
 	padding: 5px;
-	display: grid;
-	grid-template-columns: 1fr 2fr;
-	gap: 15px;
+	display: flex;
+	width: 70%;
 }
 .contact .contactBox .contactInfo {
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 	background: linear-gradient(135deg, #393e40 0%, #7c7a7a 70%, #393e40 100%);
-	width: 100%;
-	padding: 10px;
-}
-.contact .contactBox .contactInfo {
 	border-top-right-radius: 3px;
 	border-bottom-right-radius: 3px;
-}
-.contact .contactBox .contactInfo .box,
-.contact .contactBox .contactInfo .social-links {
+	width: 100%;
 	display: flex;
-	align-items: center;
-	padding: 10px 0;
+	align-items: flex-start;
+	justify-content: center;
+}
+.contact .contactBox .contactInfo .box .contactIcon {
 	color: var(--primary-white-font);
+	font-size: 9rem;
 }
 .contact .contactBox .contactInfo .box .icon {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.contact .contactBox .contactInfo .box .icon i {
+	background: var(--primary-white-font);
 	width: 40px;
 	height: 40px;
-	background: var(--primary-white-bg);
-	color: var(--primary-black-font);
+	border-radius: 50%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-radius: 50%;
-	border: 1px solid var(--primary-black-bg);
-	margin-right: 10px;
+	margin-right: 15px;
 }
-.contact .contactBox .contactForm h3 {
+.contact .contactBox .contactInfo .box span {
+	color: var(--primary-white-font);
+	text-transform: uppercase;
+}
+.contact .contactBox .contactInfo .box > div {
+	margin: 10px 0;
+}
+.contact .contactForm {
+	width: 100%;
+	padding: 0 20px;
+}
+.contact .contactForm h3 {
 	margin-bottom: 20px;
 	font-size: 1.2rem;
 	font-weight: 900;
+	width: 100%;
 	text-align: center;
 }
-.contact .contactBox .contactForm .row100 {
+.contact .contactForm .row100 {
 	position: relative;
 	width: 100%;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
 }
-.contact .contactBox .contactForm .row100 .col {
+.contact .contactForm .row100 .col {
 	position: relative;
-	width: 90%;
+	width: 100%;
 	padding: 0 10px;
 	margin: 15px 0 10px;
 	transition: 0.5s;
 }
-.contact .contactBox .contactForm .row100 .inputBox {
+.contact .contactForm .row100 .inputBox {
 	position: realtive;
 	width: 100%;
 	height: 30px;
 	color: var(--primary-black-font);
 }
-.contact .contactBox .contactForm .row100 .inputBox input,
-.contact .contactBox .contactForm .row100 .inputBox.textarea textarea {
+.contact .contactForm .row100 .inputBox input,
+.contact .contactForm .row100 .inputBox.textarea textarea {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -75,7 +85,7 @@
 	z-index: 1;
 	color: var(--primary-black-font);
 }
-.contact .contactBox .contactForm .row100 .inputBox .text {
+.contact .contactForm .row100 .inputBox .text {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -86,12 +96,12 @@
 	transition: 0.5s;
 	pointer-events: none;
 }
-.contact .contactBox .contactForm .row100 .inputBox input:focus + .text,
-.contact .contactBox .contactForm .row100 .inputBox input:valid + .text {
+.contact .contactForm .row100 .inputBox input:focus + .text,
+.contact .contactForm .row100 .inputBox input:valid + .text {
 	top: -30px;
 	left: -5px;
 }
-.contact .contactBox .contactForm .row100 .inputBox .line {
+.contact .contactForm .row100 .inputBox .line {
 	position: absolute;
 	bottom: 0;
 	display: block;
@@ -101,8 +111,8 @@
 	border-radius: 2px;
 	pointer-events: none;
 }
-.contact .contactBox .contactForm .row100 .inputBox input:focus ~ .line,
-.contact .contactBox .contactForm .row100 .inputBox input:valid ~ .line {
+.contact .contactForm .row100 .inputBox input:focus ~ .line,
+.contact .contactForm .row100 .inputBox input:valid ~ .line {
 	height: 100%;
 }
 .contact .contactBox .contactForm .row100 .inputBox.textarea {
@@ -111,12 +121,12 @@
 	height: 100px;
 	padding: 10px 0;
 }
-.contact .contactBox .contactForm .row100 .inputBox.textarea textarea {
+.contact .contactForm .row100 .inputBox.textarea textarea {
 	height: 100%;
 	resize: none;
 }
-.contact .contactBox .contactForm .row100 .inputBox textarea:focus ~ .text,
-.contact .contactBox .contactForm .row100 .inputBox textarea:valid ~ .text {
+.contact .contactForm .row100 .inputBox textarea:focus ~ .text,
+.contact .contactForm .row100 .inputBox textarea:valid ~ .text {
 	top: -30px;
 	left: -5px;
 }
@@ -129,7 +139,6 @@ input[type="submit"] {
 	padding: 7px 35px;
 	color: var(--primary-white-font);
 	border: 1px solid var(--primary-black-bg);
-	/* font-size: 1rem; */
 	font-weight: 300;
 	display: inline-block;
 	text-align: center;
@@ -147,4 +156,52 @@ input[type="submit"]:hover {
 	font-weight: 500;
 	color: var(--primary-black-font);
 	border: 1px solid var(--primary-black-bg);
+}
+
+/* MEDIA QUERIES START */
+
+/* Small devices (portrait tablets and large phones) */
+@media (min-width: 0px) and (max-width: 767px) {
+	.contact .title {
+		font-size: 4rem;
+	}
+	.contact .contactBox {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	.contact .contactBox .contactInfo .box .contactIcon {
+		font-size: 4rem;
+	}
+	.contact .contactBox .contactInfo .box .icon i {
+		width: 30px;
+		height: 30px;
+	}
+	.contact .contactBox .contactInfo .box span {
+		font-size: 0.8rem;
+	}
+	.contact .contactBox .contactInfo {
+		box-shadow: none;
+		justify-content: flex-start;
+		padding: 25px;
+		margin-bottom: 25px;
+	}
+	.contact .contactForm .row100 .inputBox .line {
+		width: 100%;
+	}
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 992px) {
+	.contact .contactBox {
+		width: 100%;
+	}
+}
+
+/* Large devices (laptops/desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Extra large devices (large laptops and desktops) */
+@media (min-width: 1200px) {
 }

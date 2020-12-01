@@ -59,6 +59,11 @@
 	section {
 		padding: 50px;
 	}
+	.about .grid .about-img {
+		justify-self: flex-start;
+		padding: 10px;
+		height: 100%;
+	}
 }
 
 /* Large devices (laptops/desktops) */
