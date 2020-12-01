@@ -1,0 +1,72 @@
+.jumbo {
+	position: relative;
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.jumbo img {
+	width: 350px;
+	object-fit: cover;
+	object-position: center;
+}
+.jumbo .title-section {
+	color: var(--primary-black-font);
+}
+.jumbo .title-section .subtitle {
+	padding-left: 5px;
+}
+.jumbo .title-section .info-group {
+	padding-left: 5px;
+	margin-top: 10px;
+	display: inline-block;
+}
+.jumbo .title-section .info-group .item {
+	margin-bottom: 5px;
+	text-transform: uppercase;
+}
+.jumbo .title-section .info-group i {
+	padding-right: 5px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media (min-width: 0px) and (max-width: 767px) {
+	.jumbo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.jumbo .title-section .title {
+		font-size: 5rem;
+	}
+	.jumbo img {
+		display: none;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 992px) {
+	.jumbo {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 30px 50px;
+	}
+	.jumbo .title-section .title {
+		font-size: 5rem;
+	}
+	.jumbo img {
+		width: 300px;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script
+			src="https://kit.fontawesome.com/7ce9c633cc.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="/css/main.css" />
+		<title>Portfolio</title>
+	</head>
+	<body>
+		<!-- HEADER START -->
+		<header>
+			<a href="#home" class="logo">Portfolio</a>
+			<div class="toggle" onclick="toggleMenu()"></div>
+			<ul class="menu">
+				<li><a href="#home" onclick="toggleMenu()">Home</a></li>
+				<li><a href="#about" onclick="toggleMenu()">About</a></li>
+				<li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+				<li>
+					<a href="#portfolio" onclick="toggleMenu()">Portfolio</a>
+				</li>
+				<li>
+					<a href="#contact" onclick="toggleMenu()">Contact</a>
+				</li>
+			</ul>
+		</header>
+		<!-- HEADER END -->
+
+		<!-- JUMBO START -->
+		<section id="jumbo" class="jumbo">
+			<div class="title-section">
+				<h1 class="title stroke">Desi</h1>
+				<h1 class="title">Michael</h1>
+				<h4 class="subtitle">Creative Web Developer</h4>
+				<div class="info-group">
+					<div class="item">
+						<i class="fas fa-map-marker-alt"></i>
+						Atlanta, Ga
+					</div>
+					<a href="#" class="item">
+						<i class="fas fa-envelope"></i>
+						desiwebdev11@gmail.com
+					</a>
+				</div>
+			</div>
+			<div class="jumbo-img">
+				<img src="/images/headshot.png" alt="image" />
+			</div>
+		</section>
+		<!-- JUMBO END -->
+
+		<!-- ABOUT ME START -->
+		<section id="about" class="about">
+			<div class="grid">
+				<div class="content-box">
+					<div class="title-section bg">
+						<h1 class="title stroke">About</h1>
+						<h4 class="subtitle">Desi Michael</h4>
+					</div>
+					<p>
+						Hello I'm Desi, a front end developer located in
+						Atlanta. Although the picture to the right has nothing
+						to do with development, it is a vauable part of who I am
+						as a person. I have a passion for fitness and just as
+						much of a passion for coding. Personally understanding
+						how impactful the internet is, it assured my decision in
+						becoming a front end web developer in having the
+						opportunity to help people around the world accomplish
+						their goals and aspirations. My focus is on building the
+						skills over time that's necessary to have aesthetically
+						pleasing and dynamically functional full stack
+						applications.
+					</p>
+					<a class="primary-btn" href="#">Download CV</a>
+					<div class="social-links">
+						<a href="#"><i class="fab fa-linkedin"></i> </a>
+						<a href="#"><i class="fab fa-instagram"></i> </a>
+					</div>
+				</div>
+				<div class="about-img">
+					<img
+						src="/images/aboutme.jpg"
+						alt="not today"
+						class="image"
+					/>
+				</div>
+			</div>
+		</section>
+		<!-- ABOUT ME END -->
+
+		<!-- SKILLS START -->
+		<section id="skills" class="skills">
+			<div class="title-section bg">
+				<h1 class="title stroke">Skills</h1>
+				<h4 class="subtitle">Never Stop Learning...</h4>
+			</div>
+			<div class="skills-section">
+				<div class="skills-group">
+					<div class="skill">
+						<i class="fab fa-html5"></i>
+						HTML
+					</div>
+					<div class="skill">
+						<i class="fab fa-css3-alt"></i>
+						CSS
+					</div>
+					<div class="skill">
+						<i class="fab fa-js-square"></i>
+						Javascript
+					</div>
+					<div class="skill">
+						<i class="fab fa-sass"></i>
+						SASS
+					</div>
+				</div>
+				<div class="skills-group">
+					<div class="skill">
+						<i class="fab fa-bootstrap"></i>
+						BOOTSTRAP
+					</div>
+					<div class="skill">
+						<i class="fab fa-css3"></i>
+						FLEXBOX
+					</div>
+					<div class="skill">
+						<i class="fas fa-th"></i>
+						CSS GRID
+					</div>
+					<div class="skill">
+						<i class="fab fa-git-alt"></i>
+						GIT
+					</div>
+				</div>
+				<div class="skills-group">
+					<div class="skill">
+						<i class="fab fa-laravel"></i>
+						PHP LARAVEL (lite)
+					</div>
+					<div class="skill">
+						<i class="fab fa-shopify"></i>
+						SHOPIFY (themes)
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- PORTFOLIO START -->
+		<section id="portfolio" class="portfolio">
+			<div class="title-section bg">
+				<h1 class="title stroke">Portfolio</h1>
+				<h4 class="subtitle">Continuous Progression...</h4>
+			</div>
+			<div class="portfolio-grid">
+				<div class="portfolio-box">
+					<img
+						src="/images/Nike-Air-Max-95.png"
+						alt="image"
+						class="portfolio-image"
+					/>
+					<div class="overlay">
+						<h3>P1</h3>
+						<span class="subtitle"> Restaurant </span>
+						<div class="desc">
+							Lorem ipsum, dolor sit amet consectetur adipisicing
+							elit. Perferendis, deleniti vitae. Officia possimus
+							asperiores reprehenderit totam aperiam laudantium
+							repellat obcaecati.
+						</div>
+					</div>
+					<div class="portfolio-views">
+						<a href="#" class="live">
+							<i class="fas fa-eye"></i>
+						</a>
+						<a href="#" class="github">
+							<i class="fab fa-github-alt"></i>
+						</a>
+					</div>
+					<div class="info-box">
+						<div class="subtitle">Restaurant</div>
+					</div>
+				</div>
+				<div class="portfolio-box">
+					<img
+						src="/images/fitness-project.png"
+						alt="image"
+						class="portfolio-image"
+					/>
+					<div class="overlay">
+						<h3>P2</h3>
+						<span class="subtitle">Fit Apparel</span>
+						<div class="desc">
+							<p>Created Customizable themes for businesses</p>
+							<p>Customizable themes</p>
+							<p>Customizable themes</p>
+							<p>Customizable themes</p>
+						</div>
+					</div>
+					<div class="portfolio-views">
+						<a href="#" class="live">
+							<i class="fas fa-eye"></i>
+						</a>
+						<a href="#" class="github">
+							<i class="fab fa-github-alt"></i>
+						</a>
+					</div>
+					<div class="info-box">
+						<div class="subtitle">Fit Apparel</div>
+					</div>
+				</div>
+				<div class="portfolio-box">
+					<img
+						src="images/restaurant-project.png"
+						alt="image"
+						class="portfolio-image"
+					/>
+					<div class="overlay">
+						<h3>P3</h3>
+						<span class="subtitle"> Restaurant </span>
+						<div class="desc">
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Incidunt perspiciatis maxime voluptates! Ab
+							modi molestiae veritatis consectetur, libero soluta
+							facilis?
+						</div>
+					</div>
+					<div class="portfolio-views">
+						<a href="#" class="live">
+							<i class="fas fa-eye"></i>
+						</a>
+						<a href="#" class="github">
+							<i class="fab fa-github-alt"></i>
+						</a>
+					</div>
+					<div class="info-box">
+						<div class="subtitle">Restaurant</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- PORTFOLIO END -->
+
+		<!-- CONTACT FORM START -->
+		<section id="contact" class="contact">
+			<div class="title-section bg">
+				<h1 class="title stroke">Contact</h1>
+				<h4 class="subtitle">Lets Chat...</h4>
+			</div>
+			<div class="contactBox">
+				<div class="contactInfo">
+					<div class="box">
+						<div class="icon"><i class="fas fa-map-pin"></i></div>
+						<div class="text">Atlanta, Ga</div>
+					</div>
+					<div class="box">
+						<div class="icon"><i class="fas fa-envelope"></i></div>
+						<div class="text">desiwebdev11@gmail.com</div>
+					</div>
+				</div>
+				<div class="contactForm">
+					<h3>Send a Message</h3>
+					<div class="row100">
+						<div class="col">
+							<div class="inputBox">
+								<input
+									type="text"
+									name="fname"
+									required="required"
+								/>
+								<span class="text">First Name</span>
+								<span class="line"></span>
+							</div>
+						</div>
+						<div class="col">
+							<div class="inputBox">
+								<input
+									type="text"
+									name="lname"
+									required="required"
+								/>
+								<span class="text">Last Name</span>
+								<span class="line"></span>
+							</div>
+						</div>
+					</div>
+					<div class="row100">
+						<div class="col">
+							<div class="inputBox">
+								<input
+									type="text"
+									name="email"
+									required="required"
+								/>
+								<span class="text">Email</span>
+								<span class="line"></span>
+							</div>
+						</div>
+						<div class="col">
+							<div class="inputBox">
+								<input
+									type="tel"
+									name="lname"
+									required="required"
+								/>
+								<span class="text">Phone</span>
+								<span class="line"></span>
+							</div>
+						</div>
+					</div>
+					<div class="row100">
+						<div class="col">
+							<div class="inputBox textarea">
+								<textarea required="required"></textarea>
+								<span class="text"
+									>Leave a message here...</span
+								>
+								<span class="line"></span>
+							</div>
+						</div>
+					</div>
+					<div class="row100">
+						<div class="col">
+							<input type="submit" value="Send" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- CONTACT FORM END -->
+
+		<!-- FOOTER START -->
+		<footer>
+			<div class="container">
+				<div class="footer-info">
+					<a href="#">desiwebdev11@gmail.com</a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+					<a href="#"><i class="fab fa-linkedin"></i></a>
+				</div>
+			</div>
+		</footer>
+		<!-- FOOTER END -->
+		<script src="/index.js"></script>
+	</body>
+</html>

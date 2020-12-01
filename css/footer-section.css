@@ -1,0 +1,39 @@
+footer {
+	background: var(--primary-black-bg);
+	padding: 30px 100px;
+}
+footer .footer-info a {
+	padding: 0 5px;
+	color: var(--primary-white-font);
+	font-size: 1.1rem;
+}
+footer .footer-info a:hover {
+	color: var(--primary-hover);
+	transition: all 0.3s ease-in-out;
+}
+
+/* MEDIA QUERIES START */
+
+/* Small devices (portrait tablets and large phones) */
+@media (min-width: 0px) and (max-width: 767px) {
+	footer {
+		padding: 30px 10px;
+	}
+}
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (min-width: 991px) {
+	footer {
+		padding: 30px 50px;
+	}
+}
+
+/* Large devices (laptops/desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Extra large devices (large laptops and desktops) */
+@media (min-width: 1200px) {
+	footer {
+		padding: 30px 100px;
+	}
+}

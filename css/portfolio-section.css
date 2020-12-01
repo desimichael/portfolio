@@ -1,0 +1,139 @@
+.portfolio .title-section {
+	display: inline-block;
+	border-bottom: 2px solid var(--primary-black-font);
+	padding-bottom: 10px;
+}
+.portfolio .portfolio-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 70px 20px;
+	padding: 100px 0px;
+	height: 100%;
+	width: 100%;
+}
+.portfolio .portfolio-grid .portfolio-box {
+	border: 1px solid var(--primary-black-bg);
+	-moz-box-shadow: inset 0 0 10px var (--primary-black-font);
+	-webkit-box-shadow: inset 0 0 10px var(--primary-black-font);
+	box-shadow: inset 0px 4px 10px var(--primary-black-font);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+	cursor: pointer;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.64);
+	object-fit: cover;
+	object-position: center;
+}
+.portfolio .portfolio-grid .portfolio-box img {
+	visibility: visible;
+	height: 300px;
+	z-index: 0;
+}
+.portfolio .portfolio-grid .portfolio-box .overlay h3 {
+	font-size: 4rem;
+	position: absolute;
+	top: 0;
+	right: 10px;
+	padding: 15px 0 0;
+	color: var(--grey-title);
+	font-weight: 900;
+	pointer-events: none;
+	visibility: visible;
+	z-index: 990;
+}
+.portfolio .portfolio-grid .portfolio-box .info-box {
+	background: var(--primary-black-bg);
+	text-align: center;
+	width: 100%;
+	padding: 10px 5px;
+	position: relative;
+}
+.portfolio .portfolio-grid .portfolio-box .info-box .subtitle {
+	color: var(--primary-white-font);
+}
+
+.portfolio .portfolio-grid .portfolio-box .portfolio-views {
+	padding: 10px;
+	position: absolute;
+	bottom: 0;
+	visibility: hidden;
+}
+.portfolio .portfolio-grid .portfolio-box .overlay {
+	height: 100%;
+	width: 100%;
+	padding: 20px;
+	background: var(--opacity);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	color: var(--primary-white-font);
+	position: absolute;
+	visibility: hidden;
+}
+/* BOX HOVER EFFECTS START*/
+.portfolio .portfolio-grid .portfolio-box:hover .overlay {
+	transform: translateY(-40px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+	background: linear-gradient(#393e40, #f4f4f4, #393e40 100%);
+	visibility: visible;
+	transition: 0.5s;
+}
+.portfolio .portfolio-grid .portfolio-box:hover .overlay h3 {
+	color: var(--primary-black-font);
+	transition: 0.5s;
+}
+.portfolio .portfolio-grid .portfolio-box .portfolio-views a {
+	color: var(--primary-black-font);
+	background: var(--grey-bg);
+	padding: 10px;
+	font-size: 1rem;
+	visibility: visible;
+	transition: 0.9s ease-in-out;
+}
+.portfolio .portfolio-grid .portfolio-box .portfolio-views a:hover {
+	color: var(--primary-hover);
+	transition: all 0.3s ease-in-out;
+}
+
+.portfolio .portfolio-grid .portfolio-box:hover .info-box {
+	background: var(--primary-black-bg);
+	text-align: center;
+	width: 100%;
+	padding: 10px 5px;
+	transform: translateY(45px);
+	translate: 0.5s;
+}
+.portfolio .portfolio-grid .portfolio-box:hover img {
+	visibility: hidden;
+}
+/* BOX HOVER EFFECTS END*/
+
+/* MEDIA QUERIES START */
+
+/* Small devices (portrait tablets and large phones) */
+@media (min-width: 0px) and (max-width: 767px) {
+	.portfolio {
+		margin-top: 50px;
+	}
+	.portfolio .title {
+		font-size: 4rem;
+	}
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 992px) {
+}
+
+/* Large devices (laptops/desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Extra large devices (large laptops and desktops) */
+@media (min-width: 1200px) {
+}
