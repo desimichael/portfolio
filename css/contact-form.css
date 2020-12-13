@@ -1,11 +1,14 @@
-.contact .contactBox {
-	margin-top: 50px;
+.contact .contact-section {
+	padding: 50px 0;
+}
+.contact .contact-section .contactBox {
+	margin: 50px 0;
 	border: 2px solid var(--grey-bg);
 	padding: 5px;
 	display: flex;
-	width: 100%;
+	width: 70%;
 }
-.contact .contactBox .contactInfo {
+.contact .contact-section .contactBox .contactInfo {
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 	background: linear-gradient(135deg, #393e40 0%, #7c7a7a 70%, #393e40 100%);
 	border-top-right-radius: 3px;
@@ -15,16 +18,16 @@
 	align-items: flex-start;
 	justify-content: center;
 }
-.contact .contactBox .contactInfo .box .contactIcon {
+.contact .contact-section .contactBox .contactInfo .box .contactIcon {
 	color: var(--primary-white-font);
 	font-size: 9rem;
 }
-.contact .contactBox .contactInfo .box .icon {
+.contact .contact-section .contactBox .contactInfo .box .icon {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 }
-.contact .contactBox .contactInfo .box .icon i {
+.contact .contact-section .contactBox .contactInfo .box .icon i {
 	background: var(--primary-white-font);
 	width: 40px;
 	height: 40px;
@@ -34,11 +37,11 @@
 	align-items: center;
 	margin-right: 15px;
 }
-.contact .contactBox .contactInfo .box span {
+.contact .contact-section .contactBox .contactInfo .box span {
 	color: var(--primary-white-font);
 	text-transform: uppercase;
 }
-.contact .contactBox .contactInfo .box > div {
+.contact .contact-section .contactBox .contactInfo .box > div {
 	margin: 10px 0;
 }
 .contact .contactForm {

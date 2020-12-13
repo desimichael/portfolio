@@ -3,15 +3,10 @@
 	min-height: 100vh;
 	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	max-width: 1200px;
 	margin: 0 auto;
-}
-.jumbo img {
-	width: 350px;
-	object-fit: cover;
-	object-position: center;
 }
 .jumbo .title-section {
 	color: var(--primary-black-font);

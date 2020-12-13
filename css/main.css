@@ -36,17 +36,17 @@ body {
 	color: var(--primary-black-font);
 	line-height: 1.5;
 	font-family: "Roboto", sans-serif;
-	height: 100vh;
+	box-shadow: 5px -15px 50px 5px var(--paragraph) inset;
 }
 
 section {
-	padding: 100px;
+	margin: 100px 0px;
 }
-/* .container {
-	max-width: 1200px;
-	padding: 0 40px;
+.container {
+	max-width: 1150px;
+	padding: 0px 40px;
 	margin: 0 auto;
-} */
+}
 img {
 	width: 100%;
 }

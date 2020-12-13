@@ -5,8 +5,10 @@
 }
 .portfolio .portfolio-grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-	gap: 70px 20px;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
 	padding: 100px 0px;
 	height: 100%;
 	width: 100%;
@@ -30,7 +32,7 @@
 }
 .portfolio .portfolio-grid .portfolio-box img {
 	visibility: visible;
-	height: 300px;
+	height: 250px;
 	z-index: 0;
 }
 .portfolio .portfolio-grid .portfolio-box .overlay h3 {
@@ -118,7 +120,7 @@
 
 /* Small devices (portrait tablets and large phones) */
 @media (min-width: 0px) and (max-width: 767px) {
-	.portfolio {
+	.portfolio.portfolio .portfolio-grid .portfolio-box {
 		margin-top: 50px;
 	}
 	.portfolio .title {
@@ -128,6 +130,12 @@
 
 /* Medium devices (tablets) */
 @media (min-width: 768px) and (max-width: 992px) {
+	/* .portfolio .portfolio-grid {
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	} */
+	.portfolio .portfolio-grid .portfolio-box {
+		margin: 50px 0;
+	}
 }
 
 /* Large devices (laptops/desktops) */

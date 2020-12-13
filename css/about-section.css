@@ -1,7 +1,7 @@
 .about .grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-	padding: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	/* padding: 20px; */
 	align-items: center;
 	justify-content: center;
 	background: var(--grey-bg);
@@ -33,7 +33,7 @@
 }
 .about .grid .about-img img {
 	width: 300px;
-	filter: grayscale(100%);
+	/* filter: grayscale(100%); */
 }
 
 /* MEDIA QUERIES START */
@@ -48,10 +48,7 @@
 		font-size: 5rem;
 	}
 	.about .grid .about-img {
-		padding: 5px;
-	}
-	.about .grid .about-img img {
-		width: 100%;
+		display: none;
 	}
 }
 /* Medium devices (tablets) */

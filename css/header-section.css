@@ -9,7 +9,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background: var(--grey-bg);
+	background: transparent;
 }
 header.sticky {
 	background: var(--primary-black-bg);
