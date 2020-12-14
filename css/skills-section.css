@@ -28,14 +28,29 @@
 /* Small devices (portrait tablets and large phones) */
 @media (min-width: 0px) and (max-width: 767px) {
 	.skills .title {
-		font-size: 4rem;
+		font-size: 6rem;
 	}
 	.skills .skills-section {
+		margin-top: 25px;
 		max-width: 100%;
+		display: flex;
+		justify-content: space-between;
+		font-size: 1rem;
+		padding: 0px;
+		flex-wrap: wrap;
 	}
 }
 /* Medium devices (tablets) */
 @media (min-width: 768px) and (max-width: 991px) {
+	.skills {
+		padding: 50px 0;
+	}
+	.skills .skills-section {
+		padding: 0px;
+	}
+	.skills .title-section .title {
+		font-size: 7rem;
+	}
 }
 
 /* Large devices (laptops/desktops) */

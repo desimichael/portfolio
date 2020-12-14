@@ -35,23 +35,23 @@
 		align-items: center;
 	}
 	.jumbo .title-section .title {
-		font-size: 5rem;
-	}
-	.jumbo img {
-		display: none;
+		font-size: 6rem;
+		margin-bottom: 5px;
 	}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 992px) {
 	.jumbo {
+		justify-content: center;
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
 		padding: 30px 50px;
 	}
 	.jumbo .title-section .title {
-		font-size: 5rem;
+		font-size: 7rem;
+		margin-bottom: 5px;
 	}
 	.jumbo img {
 		width: 300px;

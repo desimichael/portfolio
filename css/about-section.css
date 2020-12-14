@@ -1,3 +1,6 @@
+#about {
+	padding: 100px 0;
+}
 .about .grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -55,6 +58,13 @@
 @media (min-width: 768px) and (max-width: 991px) {
 	section {
 		padding: 50px;
+	}
+	.about .grid .content-box .title-section .title {
+		text-transform: uppercase;
+		font-size: 7rem;
+		font-weight: 700;
+		color: var(--primary-black-font);
+		line-height: 1;
 	}
 	.about .grid .about-img {
 		justify-self: flex-start;

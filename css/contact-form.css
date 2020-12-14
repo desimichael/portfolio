@@ -14,6 +14,7 @@
 	border-top-right-radius: 3px;
 	border-bottom-right-radius: 3px;
 	width: 50%;
+	padding: 15px;
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
@@ -167,13 +168,12 @@ input[type="submit"]:hover {
 	.contact .title {
 		font-size: 4rem;
 	}
-
-	.contact .contactBox {
+	.contact .contact-section .contactBox {
 		display: flex;
 		flex-direction: column;
 		width: 100%;
 	}
-	.contact .contactBox .contactInfo {
+	.contact .contact-section .contactBox .contactInfo {
 		width: 100%;
 	}
 	.contact .contactBox .contactInfo .box .contactIcon {
@@ -206,9 +206,16 @@ input[type="submit"]:hover {
 
 /* Medium devices (tablets) */
 @media (min-width: 768px) and (max-width: 992px) {
-	.contact .contactBox {
+	.contact {
+		padding: 50px 0;
+	}
+	.contact .title-section .title {
+		font-size: 7rem;
+	}
+	.contact .contact-section .contactBox {
 		width: 100%;
 	}
+
 	.contact .contactBox .contactInfo .box {
 		padding: 10px;
 	}
